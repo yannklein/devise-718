@@ -4,7 +4,9 @@
   <% if user_signed_in? %>
     <p>I'm in!!</p>
     <p>User email: <%= current_user.email %></p>
-    <%= link_to "Profile", profile_path, class:"btn btn-warning" %>
+    <p>
+      <%= link_to "Profile", profile_path, class:"btn btn-primary" %>
+    </p>
   <% else %>
     <p>I'm not logged in yet!</p>
   <% end %>
